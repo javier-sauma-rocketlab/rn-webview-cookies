@@ -15,9 +15,6 @@ function App(): JSX.Element {
       console.log('CookieManager.set from webkit-view =>', res);
     });
   };
-  CookieManager.clearAll().then(res => {
-    console.log('CookieManager.clearAll =>', res);
-  });
 
   useEffect(() => {
     setCookie();
